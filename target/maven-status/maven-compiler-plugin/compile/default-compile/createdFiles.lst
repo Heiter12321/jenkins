@@ -1,0 +1,7 @@
+sber/service/ClientService.class
+sber/httpSender/HttpSender.class
+sber/model/ServiceRq.class
+sber/model/ServiceRs.class
+sber/service/ClientServiceImpl.class
+sber/controller/ClientController.class
+sber/Application.class
