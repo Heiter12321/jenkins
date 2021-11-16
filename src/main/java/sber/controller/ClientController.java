@@ -33,4 +33,6 @@ public class ClientController {
     public ResponseEntity<?> forwardMessageToAS1(@RequestBody ServiceRs serviceRs) {
         return clientService.forwardMessageToAS1(serviceRs);
     }
+
+
 }

@@ -1,5 +1,6 @@
 package sber.service;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import sber.httpSender.HttpSender;
 import sber.model.ServiceRq;
@@ -12,7 +13,8 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public ResponseEntity<String> forwardMessageFromAS1(ServiceRq serviceRq) {
         HttpSender httpSender = new HttpSender();
-        return httpSender.sendMessageFromAS1(serviceRq);
+        //return httpSender.sendMessageFromAS1(serviceRq);
+        return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
     @Override
