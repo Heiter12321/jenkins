@@ -13,8 +13,8 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public ResponseEntity<String> forwardMessageFromAS1(ServiceRq serviceRq) {
         HttpSender httpSender = new HttpSender();
-        //return httpSender.sendMessageFromAS1(serviceRq);
-        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+        return httpSender.sendMessageFromAS1(serviceRq);
+        //return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
 
     @Override
