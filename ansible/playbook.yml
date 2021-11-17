@@ -1,0 +1,19 @@
+---
+- hosts: cent
+  tasks:
+    - name: Установка на CentOS
+      yum:
+        name: java-1.8.0-openjdk-devel
+        state: latest
+      become: yes
+      become_method: sudo
+
+    - name: Копирование jar на сервер
+      copy:
+        src: ../out/artifacts/ApplicationForSber_jar/ApplicationForSber.jar
+        dest: application.jar
+
+    - name: Запуск jar
+      shell: java -jar application.jar
+      ignore_errors: yes
+...
