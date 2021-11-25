@@ -1,4 +1,4 @@
-package sber.httpSender;
+package sber.httpsender;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -39,7 +39,7 @@ public class HttpSender {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_XML);
-        HttpEntity<String> request = new HttpEntity<>(new String(xml), headers);
+        HttpEntity<String> request = new HttpEntity<>(xml, headers);
 
         return restTemplate.postForEntity(url, request, String.class);
     }

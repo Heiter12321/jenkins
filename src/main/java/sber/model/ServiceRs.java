@@ -9,23 +9,23 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class ServiceRs {
 
     @XmlElement
-    private String StatusCode;
+    private String statusCode;
     @XmlElement
-    private String CardBalance;
+    private String cardBalance;
 
     public String getStatusCode() {
-        return StatusCode;
+        return statusCode;
     }
 
     public void setStatusCode(String statusCode) {
-        StatusCode = statusCode;
+        statusCode = statusCode;
     }
 
     public String getCardBalance() {
-        return CardBalance;
+        return cardBalance;
     }
 
     public void setCardBalance(String cardBalance) {
-        CardBalance = cardBalance;
+        cardBalance = cardBalance;
     }
 }

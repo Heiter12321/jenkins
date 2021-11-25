@@ -9,33 +9,33 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class ServiceRq {
 
     @XmlElement
-    private String SystemName;
+    private String systemName;
     @XmlElement
-    private String CardNumber;
+    private String cardNumber;
     @XmlElement
-    private String ClientName;
+    private String clientName;
 
     public String getSystemName() {
-        return SystemName;
+        return systemName;
     }
 
     public void setSystemName(String systemName) {
-        this.SystemName = systemName;
+        this.systemName = systemName;
     }
 
     public String getCardNumber() {
-        return CardNumber;
+        return cardNumber;
     }
 
     public void setCardNumber(String cardNumber) {
-        this.CardNumber = cardNumber;
+        this.cardNumber = cardNumber;
     }
 
     public String getClientName() {
-        return ClientName;
+        return clientName;
     }
 
     public void setClientName(String clientName) {
-        this.ClientName = clientName;
+        this.clientName = clientName;
     }
 }
