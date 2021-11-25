@@ -18,7 +18,7 @@ public class ServiceRs {
     }
 
     public void setStatusCode(String statusCode) {
-        statusCode = statusCode;
+        this.statusCode = statusCode;
     }
 
     public String getCardBalance() {
@@ -26,6 +26,6 @@ public class ServiceRs {
     }
 
     public void setCardBalance(String cardBalance) {
-        cardBalance = cardBalance;
+        this.cardBalance = cardBalance;
     }
 }
